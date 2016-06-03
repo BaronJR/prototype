@@ -189,3 +189,7 @@
 .get-app img {
   height: 40px;
 }
+
+.videoSection pre {
+  min-height: 500px;
+}
