@@ -10,12 +10,26 @@ function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
     document.getElementById('response').innerHTML += responseString;
 
-    var newVideo = '<iframe id="ytplayer" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/M7lc1UVf-VE?showinfo=0" frameborder="0"></iframe>;'
+    // var newVideo = '<iframe id="ytplayer" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/M7lc1UVf-VE?showinfo=0" frameborder="0"></iframe>;'
 
   //   var newVideo = "<iframe id='ytplayer' type='text/html' width='640' height='390'
   // src='https://www.youtube.com/embed/" + youtubeId + "?showinfo=0'
   // frameborder='0'></iframe>";
-    document.getElementById('videoPlayer').innerHTML += newVideo;
+    // document.getElementById('videoPlayer').innerHTML += newVideo;
+
+
+}
+
+function createVideo(response) {
+    var videoID = response.items[0].snippet.resourceId.videoId;
+    var thumbnailID = response.items[0].snippet.thumbnails.medium.url;
+
+    var videoElement = 
+    '<div>' + 
+        '<a href="' + videoID + '" class="lightbox"><img src="' + thumbnailID + '"></a>' + 
+    '</div>';
+
+    document.getElementById('videoPlayer').innerHTML += videoElement;
 }
 
 // Called automatically when JavaScript client library is loaded.
@@ -46,7 +60,7 @@ function playlistItems() {
 // Called automatically with the response of the YouTube API request.
 function onSearchResponse(response) {
     showResponse(response);
+    createVideo(response);
 }
-
 
 // Youtube player embed https://developers.google.com/youtube/player_parameters#Manual_IFrame_Embeds

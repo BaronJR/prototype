@@ -43,36 +43,6 @@ var main = function() {
     prevDot.addClass('active-dot');
   });
 
-  $('.lightbox').click(function(e) {
-    e.preventDefault();
-
-    var image_href = $(this).attr("href");
-
-    if ($('#lightbox').length > 0) {
-      $('#content').html('<img src="' + image_href + '">')
-
-      $('#lightbox').show();
-    }
-    else {
-      var lightbox = 
-      '<div id="lightbox">' + 
-        '<div id="container">' + 
-          '<p>Close X</p>' + 
-          '<div class="sixteen-nine">' + 
-            '<iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/M7lc1UVf-VE?showinfo=0" frameborder="0"></iframe>' + 
-          '</div>' + 
-          // '<img src="' + image_href + '"">' + 
-        '</div>' + 
-      '</div>';
-
-      $('body').append(lightbox);
-    }
-  });
-
-  $('body').on('click', '#lightbox', function() {
-    $('#lightbox').hide();
-  });
-
 }
 
 $(document).ready(main);
