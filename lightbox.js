@@ -1,7 +1,7 @@
 $('body').on('click', '.lightbox', function(e) {
   e.preventDefault();
 
-  if (this.classList.contains('lightbox')) {
+  if (this.classList.contains('video')) {
     var video_href = $(this).attr("href");
 
     if ($('#lightbox').length > 0) {
