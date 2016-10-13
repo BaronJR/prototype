@@ -9,61 +9,47 @@
     <div class="header">
       <div class="container">
         <a href="#" class="logo-icon">
-          <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/logo.png">
+          <img src="twitch.png">
         </a>
 
-        <ul class="menu">
-          <li><a href="#">Get the App</a></li>
-          <li><a href="#">Tutorials</a></li>
-          <li><a href="#">Magazines</a></li>
-          <li><a href="#">Web Tools</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Careers</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">More <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Community</a></li>
-              <li><a href="#">Our Blog</a></li>
-              <li><a href="#">Maps Blog</a></li>
-              <li><a href="#">Eng Blog</a></li>
-              <li><a href="#">Advertisers</a></li>
-              <li><a href="#">Publishers</a></li>
-              <li><a href="#">About Us</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+      <ul class="menu">
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Browse</a></li>
+        <li><a href="twitter.com/twitchesports">Twitter</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Profile <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Channel</a></li>
+            <li><a href="#">Video Manager</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
+  </div>
 
     <div class="slider">
 
       <div class="slide active-slide">
         <div class="container">
           <div class="row">
-            <div class="slide-copy col-xs-5">
-              <h1>Flipboard Is Your Personal Magazine</h1>
-              <p>It's a single place to discover, collect and share the news you care about.  Add your favorite social networks, publications and blogs to stay connected to the topics and people closest to you.</p>
-              
-              <ul class="get-app">
-                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ios.png"></a></li>
-                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/android.png"></a></li>
-                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/windows.png"></a></li>
-                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/blackberry.png"></a></li>
-              </ul>
-            </div>
-            <div class="slide-img col-xs-7">
-              <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/home.png" width="540px">
+            <div class="slide-copy video col-xs-12">
+              <div id="twitchPlayer"></div>
             </div>
           </div>
-        </div>      
-      </div>
+        </div>
+      </div>      
 
       <div class="slide slide-feature">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/cnn.png"></a>
-              <a href="#">Read Now</a>
+              <a href="twitch.tv/riotgames"><img src="lolworlds_logo.png"></a>
+              <a href="twitch.tv/riotgames">Watch Now</a>
             </div>
             
           </div>
@@ -74,9 +60,9 @@
         <div class="container">
           <div class="row">
             <div class="slide-copy col-xs-5">
-              <h1>Enjoy Flipboard Magazines</h1>
-              <h2>on the Web</h2>
-              <p>Millions of people use Flipboard to read and collect the news they care about, curating their favorite stories into their own magazines on any topic imaginable. Now magazines created by our readers, from Dali to End Trafficking, can be shared and enjoyed on the Web by anyone, anywhere.</p>
+              <h1>Twitch Esports</h1>
+              <h2>Introducing Clips</h2>
+              <p>All your favorite content in bite-sized pieces. Simply tune in, and watch the best highlights from around the world. Think the game looks sick? Follow and tune in for the next broadcast!</p>
               
             </div>
             <div class="slide-img col-xs-7">
@@ -92,7 +78,7 @@
           <div class="row">
             <div class="slide-copy col-xs-5">
               <h1>Badges & Widgets</h1>
-              <p>Millions of people use Flipboard to read and collect the news they care about, curating their favorite stories into their own magazines. Now you can promote the ones you create or think are awesome.</p>
+              <p>Level up your Esports experience by participating in Chat. You AND your favorite player both win when you play!</p>
               
               <ul class="get-app">
                 <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ios.png"></a></li>
@@ -102,7 +88,7 @@
               </ul>
             </div>
             <div class="slide-img col-xs-7">
-              <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/bw.png" width="540px">
+              <img src="badges.jpeg">
             </div>
           </div>
         </div>      
@@ -123,12 +109,19 @@
     
     <div class="videoSection">
       <div class="container">
-        <div id="videoPlayer">
-          <!-- <iframe id="ytplayer" type="text/html" width="640" height="390"
-  src="https://www.youtube.com/embed/M7lc1UVf-VE?showinfo=0"
-  frameborder="0"></iframe> -->
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL19501DCDB5767545" frameborder="0" allowfullscreen></iframe> -->
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="calendar.png">
+          </div>
         </div>
+      
+        <!--<div class="row">
+        <div id="videoPlayer">
+          <iframe id="ytplayer" type="text/html" width="640" height="390"
+  src="https://www.youtube.com/embed/M7lc1UVf-VE?showinfo=0"
+  frameborder="0"></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL19501DCDB5767545" frameborder="0" allowfullscreen></iframe>
+        </div>-->
 
 <!--         <div>
           <a href="image1.jpg" class="lightbox"><img src="thumbnail1.jpg"></a>
@@ -146,17 +139,22 @@
           </iframe>
         </div> -->
 
-        <div>
-            <div id="twitchPlayer"></div>
-        </div>
 
-        <div style="width: 400px">
-          <a class="twitter-timeline" data-width="100%" data-height="500" data-theme="light" href="https://twitter.com/JamesReilman">Tweets by JamesReilman</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+        <div class="row content">
+          <div class="col-xs-6">
+            <a class="twitter-timeline" data-width="400" data-height="800" href="https://twitter.com/TwitchEsports">Tweets by TwitchEsports</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <!--<a class="twitter-timeline" data-width="100%" data-height="500" data-theme="light" href="https://twitter.com/JamesReilman">Tweets by JamesReilman</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+          </div>
 
-        <div>
+          <div class="col-xs-6">
+            <div>
+              <a href="D4-7Lu-8Cn0" class="lightbox video"><img style="width:400px" src="https://i.ytimg.com/vi_webp/D4-7Lu-8Cn0/sddefault.webp"></a>
+            </div>
+          </div>
+        </div>
+        <!--<div>
           <pre id="response"></pre>
-        </div>
+        </div>-->
       </div>
     </div>
 

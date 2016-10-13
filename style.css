@@ -57,7 +57,7 @@
 .slider {
   position: relative;
   width: 100%;
-  height: 470px;
+  height: 480px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -114,7 +114,7 @@
 
 .slide-feature {
   text-align: center;
-  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ac.png');
+  background-image: url('lolworlds.png');
   height: 470px;
 }
 
@@ -190,8 +190,20 @@
   height: 40px;
 }
 
-.videoSection pre {
-  min-height: 500px;
+.video {
+  text-align: center;
+}
+
+.videoSection {
+  margin-top: 50px;
+}
+
+.youtube img {
+  width:400px;
+}
+
+.content {
+  margin-top: 20px;
 }
 
 .lightbox {
@@ -231,6 +243,10 @@
   box-shadow: 0 0 25px #111;
   -webkit-box-shadow: 0 0 25px #111;
   -mox-box-shadow: 0 0 25px #111;
+}
+
+.timeline {
+  text-align:center;
 }
 
 #container {
